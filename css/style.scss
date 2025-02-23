@@ -613,12 +613,12 @@
   @media (max-width: 430px) {
     background-size: 430px;
     min-height: 835px;
-    padding-top: 5px;
+    padding-top: 40px;
     &__box {
-      height: 810px;
+      height: 790px;
     }
     &__btn {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 }
@@ -898,20 +898,21 @@
   @media (max-width: 430px) {
     background-size: 430px;
     height: 734px;
+    padding-top: 40px;
     &.isActive{
       height: 780px;
       .screen4__box{
-        height: 730px;
+        height: 720px;
       } 
     }
     &__child {
       background-size: 430px;
     }
     &__box {
-      height: 700px;
+      height: 690px;
     }
     &__btn {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 }
@@ -1129,6 +1130,12 @@
     padding-bottom: 20px;
     &__logo {
       max-width: 185px;
+    }
+    &__inner--1{
+      flex-direction: column;
+      justify-content: flex-start ;
+      align-items: flex-start;
+      gap: 5px;
     }
   }
 }
