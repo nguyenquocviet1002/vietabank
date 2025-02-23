@@ -88,7 +88,7 @@ $(document).ready(function () {
         $('.header__menu').removeClass('active');
         $('.backdrop').removeClass('show');
         var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top;
+            offsetTop = href === "#" ? 0 : $(href).offset().top - 73;
         $('html, body').stop().animate({
             scrollTop: offsetTop
         }, 1000);
@@ -283,17 +283,18 @@ $(document).ready(function () {
 
     $(".btn-action").click(function() {
         $('html, body').animate({
-            scrollTop: $("#page2").offset().top
+            scrollTop: $("#page2").offset().top - 73
         }, 1000);
     });
     $(".btn-action1").click(function() {
+        console.log($("#page3").offset().top);
         $('html, body').animate({
-            scrollTop: $("#page3").offset().top
+            scrollTop: $("#page3").offset().top - 73
         }, 1000);
     });
     $(".btn-action2").click(function() {
         $('html, body').animate({
-            scrollTop: $("#page4").offset().top
+            scrollTop: $("#page4").offset().top - 73
         }, 1000);
     });
 
