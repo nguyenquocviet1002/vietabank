@@ -595,14 +595,16 @@
     &__title {
       margin-top: 20px;
     }
-    &__img {
-      
-    }
     &__text {
       margin-left: 10px;
     }
+    &__list{
+      flex-wrap: wrap;
+    }
     &__item {
       padding: 10px;
+      width: calc(50% - 10px);
+      margin: 5px;
     }
     &__btn {
       margin-top: 50px;
@@ -878,8 +880,13 @@
     &__text {
       margin-left: 10px;
     }
+    &__list{
+      flex-wrap: wrap;
+    }
     &__item {
       padding: 10px;
+      width: calc(50% - 10px);
+      margin: 5px;
     }
     &__btn {
       margin-top: 50px;
