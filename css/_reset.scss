@@ -135,6 +135,7 @@ html[xmlns] .clearfix {
   width: 100%;
   padding: 0 15px;
   margin: auto;
+  position: relative;
 }
 
 @media only screen and (min-width: 576px) {
@@ -220,6 +221,7 @@ input{
   border: 2px solid #00eaf3;
   box-shadow: 0 0 10px 0 #00fffc;
   cursor: pointer;
+  animation: zoomIn 1.5s infinite ease;
   @media (max-width: 767px){
     padding: 7px 20px;
   }
@@ -244,6 +246,18 @@ input{
   100% {
       top: 0;
       opacity: 1
+  }
+}
+
+@keyframes zoomIn {
+  from{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  to{
+    transform: scale(1);
   }
 }
 

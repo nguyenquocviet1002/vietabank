@@ -152,7 +152,7 @@
   &__text {
     color: #fff;
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     span {
       font-weight: bold;
@@ -255,7 +255,6 @@
     }
     &__item{
       margin: 5px 0;
-      border-radius: 55px;
       max-width: 170px;
     }
     &__btn{
@@ -443,7 +442,7 @@
 }
 
 .screen3 {
-  background: url("../images/page3-bg.jpg") no-repeat top;
+  background: url("../images/page3-bg.jpg?v=1") no-repeat top;
   background-size: 1920px;
   min-height: 814px;
   display: flex;
@@ -515,6 +514,14 @@
     font-size: 1rem;
     margin-top: 10px;
   }
+  &__percent{
+    width: 280px;
+    position: absolute;
+    right: 220px;
+    top: -35px;
+    animation: zoomIn 1s infinite ease;
+    transform-origin: right;
+  }
   img {
     width: 100%;
     height: auto;
@@ -528,6 +535,10 @@
     }
     &__btn {
       margin-top: 20px;
+    }
+    &__percent{
+      width: 200px;
+      top: 60px;
     }
   }
   @media (max-width: 991px) {
@@ -547,6 +558,11 @@
     }
     &__sub{
       margin-bottom: 10px;
+    }
+    &__percent{
+      width: 150px;
+      top: 42px;
+      right: 150px;
     }
   }
   @media (max-width: 767px) {
@@ -578,9 +594,12 @@
     &__note {
       margin-top: 5px;
     }
+    &__percent{
+      right: 70px;
+    }
   }
   @media (max-width: 575px) {
-    background: url("../images/page3-mb-bg.jpg") no-repeat top;
+    background: url("../images/page3-mb-bg.jpg?v=1") no-repeat top;
     background-size: 575px;
     min-height: 1117px;
     display: block;
@@ -609,6 +628,11 @@
     &__btn {
       margin-top: 50px;
     }
+    &__percent{
+      width: 200px;
+      top: 320px;
+      right: 31%;
+    }
   }
   @media (max-width: 430px) {
     background-size: 430px;
@@ -619,6 +643,11 @@
     }
     &__btn {
       margin-top: 15px;
+    }
+    &__percent{
+      width: 150px;
+      top: 220px;
+      right: 31%;
     }
   }
 }
@@ -981,6 +1010,7 @@
       width: 100%;
       border: none;
       font-size: 1rem;
+      animation: unset;
     }
   }
   @media (max-width: 1199px) {
