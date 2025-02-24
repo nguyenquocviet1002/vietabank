@@ -1006,11 +1006,11 @@
     font-size: 1rem;
   }
   &__submit {
-    input {
+    text-align: center;
+    margin-top: 10px;
+    input{
       width: 100%;
-      border: none;
-      font-size: 1rem;
-      animation: unset;
+      max-width: 200px;
     }
   }
   @media (max-width: 1199px) {
@@ -1237,10 +1237,11 @@
     font-size: 1rem;
   }
   &__submit {
-    input {
+    text-align: center;
+    margin-top: 10px;
+    input{
       width: 100%;
-      border: none;
-      font-size: 1rem;
+      max-width: 200px;
     }
   }
   &__title {
