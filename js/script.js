@@ -311,8 +311,7 @@ $(document).ready(function () {
         $('.screen5__slide').css('display', 'block');
     });
 
-    var swiper4 = new Swiper(".mySwiper4", {});
-    var swiper5 = new Swiper(".mySwiper5", {});
+   
 
     //form bottom
     $('#submit-b').on('click', function() {
