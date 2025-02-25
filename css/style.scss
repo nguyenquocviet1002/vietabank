@@ -284,6 +284,11 @@
     &__light{
       margin-top: 10px;
     }
+    &__btn{
+      .button-1{
+        width: fit-content;
+      }
+    }
   }
 }
 
@@ -454,6 +459,11 @@
     }
     &__item{
       margin: 6px 0;
+    }
+    &__btn{
+      .button-1{
+        width: fit-content;
+      }
     }
   }
 }
@@ -1096,6 +1106,13 @@
       margin-top: 10px;
       margin-bottom: 10px;
       text-align: center;
+    }
+  }
+  @media (max-width: 430px){
+    &__submit {
+      input{
+        max-width: 250px;
+      }
     }
   }
 }
