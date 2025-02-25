@@ -99,6 +99,7 @@
     }
   }
   @media (max-width: 430px) {
+    padding: 10px 0;
     &__menu {
       width: 230px;
     }
@@ -241,9 +242,11 @@
     }
     &__title {
       font-size: 2rem;
+      margin-bottom: 10px;
     }
     &__text {
       font-size: 1.3rem;
+      margin-bottom: 10px;
     }
     &__note {
       margin-top: 10px;
@@ -251,7 +254,7 @@
     &__light{
       flex-wrap: wrap;
       width: 50%;
-      margin: 50px 0 30px;
+      margin: 20px 0 50px;
     }
     &__item{
       margin: 5px 0;
@@ -260,12 +263,25 @@
     &__btn{
       width: 50%;
     }
+    &__sub{
+      line-height: 1.5;
+    }
   }
   @media (max-width: 430px) {
     background-size: 430px;
     min-height: 524px;
+    padding-top: 53px;
     &__box {
       height: 450px;
+    }
+    &__title{
+      font-size: 1.6rem;
+    }
+    &__text{
+      font-size: 1.1rem;
+    }
+    &__light{
+      margin-top: 10px;
     }
   }
 }
